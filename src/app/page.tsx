@@ -1,5 +1,4 @@
 import Image from "next/image";
-import shopperImage from "./shopper.jpg";
 import Link from "next/link";
 
 export default function Home() {
@@ -7,14 +6,19 @@ export default function Home() {
     <div className="font-[family-name:var(--font-geist-sans)]">
       <div>
         <div className="relative h-screen w-screen">
-          <Image src={shopperImage} alt="image" fill objectFit="cover" />
+          <Image
+            src={"/shopper.jpg"}
+            alt="image"
+            fill
+            className="object-cover object-right"
+          />
         </div>
         <div className="absolute backdrop-blur-[2px] bg-black/80 h-screen w-screen top-0"></div>
         <div className="grid place-items-center absolute top-0 text-white h-screen w-screen">
           <div className="w-fit">
             <div className="text-center text-sm lg:text-base px-4">
               <h2 className="font-semibold mb-5 text-base lg:text-xl">
-                AGORA: Every Day is Black Friday
+                Creebify
               </h2>
               <p className="font-light w-11/12 max-w-4xl">
                 Imagine a personal shopping assistant that searches the web for
