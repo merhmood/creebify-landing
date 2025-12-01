@@ -1,21 +1,23 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Josefin_Sans, Jost } from "next/font/google";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const josefinSans = Josefin_Sans({
+  subsets: ["latin"],
+  variable: "--font-josefin-sans",
+  weight: ["400", "700"],
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const jost = Jost({
+  subsets: ["latin"],
+  variable: "--font-jost-sans",
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Agora",
-  description: "Get the best shopping deals while it's hot!",
+  title: "Creebify",
+  description:
+    "Live, connect, grow in affordable coliving spaces across Abuja & Lagos",
 };
 
 export default function RootLayout({
@@ -33,9 +35,7 @@ export default function RootLayout({
           sizes="<generated>"
         />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${josefinSans.variable} ${jost.variable} `}>
         {children}
       </body>
     </html>

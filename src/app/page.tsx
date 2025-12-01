@@ -3,37 +3,22 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="font-[family-name:var(--font-geist-sans)]">
+    <div className="font-[family-name:var(--font-josefin-sans)]">
       <div>
         <div className="relative h-screen w-screen">
-          <Image
-            src={"/shopper.jpg"}
-            alt="image"
-            fill
-            className="object-cover object-right"
-          />
+          <Image src={"/bg.jpg"} alt="image" fill className="object-cover" />
         </div>
-        <div className="absolute backdrop-blur-[2px] bg-black/80 h-screen w-screen top-0"></div>
-        <div className="grid place-items-center absolute top-0 text-white h-screen w-screen">
+        <div className="absolute backdrop-blur-sm bg-white/25 h-screen w-screen top-0"></div>
+        <div className="grid place-items-center absolute top-0 text-black h-screen w-screen">
           <div className="w-fit">
             <div className="text-center text-sm lg:text-base px-4">
-              <h2 className="font-semibold mb-5 text-base lg:text-xl">
+              <h2 className="font-light mb-3 text-3xl lg:text-4xl font-[family-name:var(--font-jost-sans)]">
                 Creebify
               </h2>
-              <p className="font-light w-11/12 max-w-4xl">
-                Imagine a personal shopping assistant that searches the web for
-                stores with the best prices, exclusive discounts, and free
-                delivery offers—all in one place. Agora brings you a smarter,
-                faster way to shop online, saving you both time and money,{" "}
-                <span className="font-semibold">
-                  Every day you shop will feel like a black friday
-                </span>
-                . Sign up for early access and be among the first to experience
-                the future of online shopping. Don’t miss out on incredible
-                deals before everyone else
-              </p>
-              <p className="font-semibold mt-8">
-                Be the First to Discover the Best Shopping Deals with Agora!
+              <h1 className="text-6xl">COMING SOON</h1>
+              <p className="font-light mt-4 text-lg lg:text-xl">
+                🌱Live, connect, grow in affordable coliving spaces across Abuja
+                & Lagos
               </p>
             </div>
             <Link href="/waitlist">
