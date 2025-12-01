@@ -5,13 +5,13 @@ import "./globals.css";
 const josefinSans = Josefin_Sans({
   subsets: ["latin"],
   variable: "--font-josefin-sans",
-  weight: ["400", "700"],
+  weight: ["200", "300", "400", "700"],
 });
 
 const jost = Jost({
   subsets: ["latin"],
   variable: "--font-jost-sans",
-  weight: ["400", "700"],
+  weight: ["200", "300", "400", "700"],
 });
 
 export const metadata: Metadata = {

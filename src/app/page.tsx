@@ -16,12 +16,12 @@ export default function Home() {
                 Creebify
               </h2>
               <h1 className="text-6xl">COMING SOON</h1>
-              <p className="font-light mt-4 text-lg lg:text-xl">
+              <p className="font-light mt-4 text-xl lg:text-2xl font-[family-name:var(--font-jost-sans)]">
                 🌱Live, connect, grow in affordable coliving spaces across Abuja
                 & Lagos
               </p>
             </div>
-            <Link href="/waitlist">
+            <Link href="#">
               <button className="block bg-white w-32 h-11 rounded-full text-black font-semibold mt-4 mx-auto">
                 Join Waitlist
               </button>
